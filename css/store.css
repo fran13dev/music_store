@@ -1,0 +1,65 @@
+.style-store {
+    display: block;
+    text-align: center;
+}
+
+.store {
+    color: white;
+    background-color: black;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+    opacity: 0.9;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.store-grid {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-evenly;
+    grid-column-gap: 10px;
+    margin-top: 50px;
+}
+
+.store-item {
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-family: 'Lexend Deca', sans-serif;
+    opacity: 0.9;
+    margin-bottom: 25px;
+    padding: 10px;
+}
+
+.store-item-name {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.item-details {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.store-item-description {
+    display: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.store-image {
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.store-image:hover {
+    opacity: 0.8;
+}
+
+.show-cart-items {
+    display: none;
+}

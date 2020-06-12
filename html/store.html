@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+			integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" type="text/css" href="../css/store.css" />
+		<link rel="stylesheet" type="text/css" href="../css/navbar.css" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Lexend+Deca|Noto+Sans|Roboto&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<title>Store</title>
+	</head>
+
+	<body>
+		<ul class="nav-bar-flex">
+			<li class="nav-bar-item">
+				<a href="home.html">HOME</a>
+			</li>
+			<li class="nav-bar-item">
+				<a href="store.html" id="store">STORE</a>
+			</li>
+			<li class="nav-bar-item">
+				<a href="about.html">ABOUT</a>
+			</li>
+			<li class="nav-bar-item" id="nav-bar-item">
+				<a href="">CONNECT</a>
+				<ul id="nav-connect">
+					<li>
+						<a href="https://www.instagram.com" target="_blank"
+							>Instagram</a
+						>
+					</li>
+					<li>
+						<a href="https://www.facebook.com" target="_blank"
+							>Facebook</a
+						>
+					</li>
+					<li>
+						<a href="https://twitter.com/login" target="_blank"
+							>Twitter</a
+						>
+					</li>
+					<li>
+						<a href="https://www.youtube.com" target="_blank"
+							>Youtube</a
+						>
+					</li>
+				</ul>
+			</li>
+			<li class="nav-bar-item">
+				<a href="checkout.html">CART</a>
+			</li>
+		</ul>
+		<div class="style-store">
+			<h1 class="store">Store</h1>
+		</div>
+		<div class="store-grid">
+			<div class="store-item">
+				<h3 class="store-item-name">Acoustic Guitar</h3>
+				<h6 class="item-details">Click for more details</h6>
+				<p class="store-item-description">
+					A sweet-sounding, great-feeling dreadnought that has plenty
+					of vibe. Featuring a laminated basswood top, back and sides,
+					with a dark-stained maple fingerboard and bridge.
+				</p>
+				<img src="../images/store_acoustic.jpg" class="store-image" />
+				<h4 class="store-item-price">R 2000</h4>
+				<button class="item-cart btn btn-light">Add To Cart</button>
+			</div>
+			<div class="store-item">
+				<h3 class="store-item-name">Electric Guitar</h3>
+				<h6 class="item-details">Click for more details</h6>
+				<p class="store-item-description">
+					The rosewood fretboard is a classic element on a strat and
+					gives you a warm, rich tone especially when you play with a
+					bit of distortion or overdrive.
+				</p>
+				<img src="../images/store_electric.jpg" class="store-image" />
+				<h4 class="store-item-price">R 4000</h4>
+				<button class="item-cart btn btn-light">Add To Cart</button>
+			</div>
+			<div class="store-item">
+				<h3 class="store-item-name">Bass Guitar</h3>
+				<h6 class="item-details">Click for more details</h6>
+				<p class="store-item-description">
+					With its dual single-coil pickups and smooth playing feel,
+					this Bass is an inspiring instrument with classic, elevated
+					style and authentic bass tone.
+				</p>
+				<img src="../images/store_bass.jpg" class="store-image" />
+				<h4 class="store-item-price">R 3000</h4>
+				<button class="item-cart btn btn-light">Add To Cart</button>
+			</div>
+			<div class="store-item">
+				<h3 class="store-item-name">Ukelele</h3>
+				<h6 class="item-details">Click for more details</h6>
+				<p class="store-item-description">
+					Its compact, comfortable body size, makes travelling easy
+					from the beach to the studio or jam room while retaining the
+					classic, light sound that made the ukulele a must-have for
+					today’s players.
+				</p>
+				<img src="../images/store_uke.jpg" class="store-image" />
+				<h4 class="store-item-price">R 1000</h4>
+				<button class="item-cart btn btn-light">Add To Cart</button>
+			</div>
+			<div class="store-item">
+				<h3 class="store-item-name">Piano</h3>
+				<h6 class="item-details">Click for more details</h6>
+				<p class="store-item-description">
+					A world-famous instrument with stunning sounds, at an
+					exceptional price. An entire world of tone is available at
+					the touch of a button.
+				</p>
+				<img src="../images/store_piano.jpg" class="store-image" />
+				<h4 class="store-item-price">R 10 000</h4>
+				<button class="item-cart btn btn-light">Add To Cart</button>
+			</div>
+			<div class="store-item">
+				<h3 class="store-item-name">Drums</h3>
+				<h6 class="item-details">Click for more details</h6>
+				<p class="store-item-description">
+					When you're serious about drumming, you need a kit to match
+					your ambition. These drums lets your technique shine
+					through, backed up with training tools to push you further.
+				</p>
+				<img src="../images/store_drums.jpg" class="store-image" />
+				<h4 class="store-item-price">R 5000</h4>
+				<button class="item-cart btn btn-light">Add To Cart</button>
+			</div>
+		</div>
+		<div class="style-back">
+			<a href="#store">
+				<img src="../images/back_top.jpg" class="img-back" />
+			</a>
+		</div>
+		<div class="show-cart-items"></div>
+		<script src="../js/script.js" async></script>
+	</body>
+</html>

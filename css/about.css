@@ -1,0 +1,78 @@
+.style-about {
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-family: 'Lexend Deca', sans-serif;
+    padding: 10px;
+    opacity: 0.9;
+    margin-top: 50px;
+}
+
+.about {
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.description {
+    font-size: 20px;
+}
+
+.center-meet {
+    text-align: center;
+}
+
+.style-meet {
+    display: inline-block;
+    color: white;
+    background-color: black;
+    font-family: 'Lexend Deca', sans-serif;
+    opacity: 0.9;
+    margin-top: 25px;
+    padding: 10px 50px;
+}
+
+.meet {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: space-evenly;
+    grid-column-gap: 25px;
+    margin-bottom: 20px;
+}
+
+.team-item {
+    display: inline-block;
+    font-family: 'Lexend Deca', sans-serif;
+    opacity: 0.9;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    margin-top: 25px;
+}
+
+.team-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.team-description {
+    font-size: 15px;
+}
+
+.team-image {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+
+.team-image:hover {
+    opacity: 0.8;
+}
+
+.show-cart-items {
+    display: none;
+}

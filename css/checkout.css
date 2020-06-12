@@ -1,0 +1,175 @@
+.style-cart {
+    text-align: center;
+}
+
+.cart {
+    display: inline-block;
+    color: white;
+    background-color: black;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+    opacity: 0.9;
+    padding: 10px 50px;
+    margin-top: 50px;
+}
+
+.cart-header-grid {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: center;
+    grid-column-gap: 25px;
+    margin-top: 50px;
+}
+
+.cart-header-item,
+.cart-footer-item {
+    text-align: center;
+    font-family: 'Lexend Deca', sans-serif;
+    color: white;
+    background-color: black;
+    opacity: 0.9;
+    padding: 10px;
+}
+
+.cart-footer-flex,
+.clear-flex {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 25px;
+}
+
+#cart-footer-item {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.cart-item-purchase {
+    text-align: center;
+    opacity: 0.9;
+}
+
+#cart-buy-button {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: bolder;
+    font-size: 25px;
+    padding: 10px 25px;
+    margin-bottom: 30px;
+}
+
+#cart-clear {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+.cart-item-grid {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-column-gap: 25px;
+    justify-content: center;
+}
+
+.cart-item-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    opacity: 0.9;
+    margin-top: 10px;
+}
+
+.cart-item-title,
+.cart-item-price,
+.cart-quantity-input {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.cart-quantity-input {
+    color: black;
+}
+
+.center-thanks {
+    text-align: center;
+}
+
+.style-thanks {
+    color: white;
+    background-color: black;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: bold;
+    opacity: 0.9;
+    padding: 10px 50px;
+    margin-bottom: 20px;
+}
+
+.modal {
+    background-image: url("../images/background-image_2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.9;
+}
+
+.modal-content {
+    color: white;
+    background-color: black;
+}
+
+.modal-title {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.close {
+    color: white;
+}
+
+.modal-body-title {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.options-flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.discount-voucher,
+.delivery-option {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: bold;
+}
+
+
+.tooltip-details {
+    font-size: small;
+}
+
+.modal-total-flex {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.modal-final-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-total {
+    margin-right: 10px;
+}
+
+.modal-tax,
+.modal-total,
+#grand-total {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}

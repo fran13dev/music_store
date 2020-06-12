@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+			integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" type="text/css" href="../css/checkout.css" />
+		<link rel="stylesheet" type="text/css" href="../css/navbar.css" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Lexend+Deca|Noto+Sans|Roboto&display=swap"
+			rel="stylesheet"
+		/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<title>Cart</title>
+	</head>
+
+	<body>
+		<ul class="nav-bar-flex">
+			<li class="nav-bar-item">
+				<a href="home.html" id="home">HOME</a>
+			</li>
+			<li class="nav-bar-item">
+				<a href="store.html">STORE</a>
+			</li>
+			<li class="nav-bar-item">
+				<a href="about.html">ABOUT</a>
+			</li>
+			<li class="nav-bar-item" id="nav-bar-item">
+				<a href="">CONNECT</a>
+				<ul id="nav-connect">
+					<li>
+						<a href="https://www.instagram.com" target="_blank"
+							>Instagram</a
+						>
+					</li>
+					<li>
+						<a href="https://www.facebook.com" target="_blank"
+							>Facebook</a
+						>
+					</li>
+					<li>
+						<a href="https://twitter.com/login" target="_blank"
+							>Twitter</a
+						>
+					</li>
+					<li>
+						<a href="https://www.youtube.com" target="_blank"
+							>Youtube</a
+						>
+					</li>
+				</ul>
+			</li>
+			<li class="nav-bar-item">
+				<a href="checkout.html">CART</a>
+			</li>
+		</ul>
+		<div class="style-cart">
+			<h3 class="cart">Cart</h3>
+		</div>
+		<div class="cart-header-grid">
+			<h4 class="cart-header-item">ITEM</h4>
+			<h4 class="cart-header-item">PRICE</h4>
+			<h4 class="cart-header-item">QUANTITY</h4>
+		</div>
+		<div class="show-cart-items"></div>
+		<div class="cart-footer-flex">
+			<div class="cart-footer-item" id="cart-footer-item">
+				<span class="cart-total">TOTAL</span>
+				<span id="cart-total-price">R0</span>
+			</div>
+		</div>
+		<div class="clear-flex">
+			<button id="cart-clear" class="btn btn-danger">CLEAR CART</button>
+		</div>
+		<div class="cart-item-purchase">
+			<button id="cart-buy-button" class="btn btn-primary">
+				BUY NOW
+			</button>
+		</div>
+		<div class="center-thanks">
+			<h3 class="style-thanks">THANK YOU FOR YOUR SUPPORT</h3>
+		</div>
+		<div class="style-back">
+			<a href="#home">
+				<img src="../images/back_top.jpg" class="img-back" />
+			</a>
+		</div>
+
+		<div class="modal" tabindex="-1" role="dialog">
+			<div class="modal-dialog modal-lg" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title col-12 text-center">
+							Discount and Delivery Options
+						</h5>
+					</div>
+					<div class="modal-body">
+						<h4 class="text-center modal-body-title">
+							Discount Vouchers
+						</h4>
+						<h5>Please Choose An Option:</h5>
+						<br />
+						<div class="options-flex">
+							<button
+								class="btn btn-light discount-voucher"
+								value="0"
+							>
+								No Voucher
+							</button>
+							<button
+								class="btn btn-light discount-voucher"
+								value="100"
+							>
+								Standard Voucher: R100
+							</button>
+							<button
+								class="btn btn-light discount-voucher"
+								value="200"
+							>
+								Premium Voucher: R200
+							</button>
+						</div>
+						<h4 class="text-center mt-4 modal-body-title">
+							Delivery Options
+						</h4>
+						<h5>Please Choose Your Delivery Option:</h5>
+						<h6 class="tooltip-details">
+							Hover over options for more details
+						</h6>
+						<br />
+						<div class="options-flex">
+							<button
+								class="btn btn-light delivery-option"
+								value="0"
+								data-toggle="tooltip"
+								title="Collect From Store"
+							>
+								Collection: Free of Charge
+							</button>
+							<button
+								class="btn btn-light delivery-option"
+								value="50"
+								data-toggle="tooltip"
+								title="Delivery Within 4 to 5 Working Days"
+							>
+								Standard Delivery: R50
+							</button>
+							<button
+								class="btn btn-light delivery-option"
+								value="150"
+								data-toggle="tooltip"
+								title="Next Day Delivery"
+							>
+								Premium Delivery: R150
+							</button>
+						</div>
+						<div class="modal-total-flex mt-4">
+							<div class="modal-total">
+								<span class="cart-total">TOTAL</span>
+								<span id="cart-modal-price">R0</span>
+							</div>
+						</div>
+						<div class="modal-final-flex mt-2">
+							<span class="modal-tax">+ 15% TAX</span>
+							<span id="grand-total">?</span>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn btn-primary confirm-buy"
+						>
+							Confirm Purchase
+						</button>
+						<button
+							type="button"
+							class="btn btn-secondary"
+							data-dismiss="modal"
+						>
+							Close
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../js/script.js" async></script>
+	</body>
+</html>
